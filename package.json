@@ -1,0 +1,23 @@
+{
+  "name": "backend-course-2025-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js --host localhost --port 3000 --cache ./cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "commander": "^14.0.3",
+    "superagent": "^10.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

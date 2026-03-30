@@ -1,0 +1,13 @@
+npm start
+
+GET запит (завантажить з http.cat та покладе в кеш):
+curl -v http://localhost:3000/200 -o 200.jpg
+
+GET запит (візьме з кешу, має працювати швидше):
+curl -v http://localhost:3000/200 -o 200_cached.jpg
+
+DELETE запит (видалить з кешу):
+curl -v -X DELETE http://localhost:3000/200
+
+PUT запит (покладе файл назад у кеш):
+curl -v -X PUT --data-binary @200.jpg http://localhost:3000/200
